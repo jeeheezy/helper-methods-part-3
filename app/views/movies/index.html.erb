@@ -2,6 +2,10 @@
   List of all movies
 </h1>
 
+<%= render partial: "zebra/giraffe" %>
+<%= render partial: "zebra/elephant", locals: { person: "Alice"} %>
+<%= render partial: "zebra/elephant", locals: { person: "Bob"} %>
+
 <hr>
 
 <div>
@@ -22,6 +26,10 @@
 
     <th>
       Description
+    </th>
+
+    <th>
+      Image
     </th>
 
     <th>
@@ -48,6 +56,10 @@
 
     <td>
       <%= movie.description %>
+    </td>
+
+    <td>
+      <%= movie.image_url %>
     </td>
 
     <td>
